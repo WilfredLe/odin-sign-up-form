@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="left-side-container">
+        <img>
+        <div class="profile-img">
+            <img>
+        </div>
+        <div>
+            aoubfiufbwui
+        </div>
+    </div>
+
+    <div class="right-side-container">
+        <p class="intro">
+            This online service is something you don't want to miss. 
+            Be sure to fill out the form below to have the amazing chance
+            to join this real service..
+        </p>
+        <h1 class="catchphrase">
+            <em>This will change your life</em>
+        </h1>
+
+        <form method="post">
+            <ul>
+                <li class="input-container">
+                    <input type="text" id="first-name" name="first-name" required>
+                    <label for="first-name">FIRST NAME</label>
+                </li>
+                <li class="input-container">
+                    <input type="text" id="last-name" name="last-name" required>
+                    <label for="last-name">LAST NAME</label>
+                </li>
+                <li class="input-container">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">EMAIL</label>
+                </li>
+                <li class="input-container">
+                    <input type="tel" id="phone-num" name="phone-num">
+                    <label for="phone-num">PHONE NUMBER</label>
+                </li>
+                <li class="input-container">
+                    <input 
+                        type="text" 
+                        id="password" 
+                        name="password" 
+                        required
+                        pattern="^(?=.*[a-z])(?=.*\d)(?=.*\W)(?=.*[A-Z])[A-Za-z\d\W]{8,20}$"
+                    >
+                    <label for="password">PASSWORD</label>
+                </li>
+                <li class="input-container">
+                    <input type="text" id="pass-confirm" name="pass-confirm" required>
+                    <label for="pass-confirm">CONFIRM PASSWORD</label>
+                </li>
+                <li class="input-container">
+                    <input type="text" id="crew-name" name="crew-name" required>
+                    <label for="crew-name">CREW NAME</label>
+                </li>
+                <li class="input-container">
+                    <select>
+                        <option value="Captain">CAPTAIN</option>
+                        <option value="Mechanic">MECHANIC</option>
+                        <option value="Researcher">RESEARCHER</option>
+                    </select>
+                </li>
+                <li>
+                    <textarea rows="10" cols="20">Tell us some details about your crew!</textarea>
+                </li>
+            </ul>
+
+            <p>
+                <button>Submit</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
