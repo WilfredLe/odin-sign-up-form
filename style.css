@@ -41,13 +41,12 @@ body {
     justify-content: center;
     width: 50vw;
     height: 100vh;
-    border: 10px solid rgb(158, 184, 255);
 }
 
 .left-side-container {
     background-image: url("Stars.jpg");
+    background-size: 100% 100%;
     margin: 0;
-    gap: 50px;
 }
 
 .card {
@@ -56,7 +55,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.283);
+    background-color: rgba(255, 255, 255, 0.447);
     gap: 100px;
     padding: 20px;
 }
@@ -64,12 +63,15 @@ body {
 form {
     background-color: rgb(124, 164, 164);
     box-shadow: 0px 5px 5px rgba(8, 8, 8, 0.279);
+    border-top: 5px solid rgb(89, 126, 141);
     border-radius: 2px;
     padding: 30px;
 }
 
 p, h1 {
     text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;;
 }
 
 ul {
@@ -80,7 +82,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 45vw;
+    width: 60vw;
     gap: 30px;
 }
 
@@ -135,24 +137,23 @@ button {
     font-size: larger;
     text-align: center;
     color: rgb(8, 4, 4);
-    background-color: rgba(66, 107, 134, 0.62);
     margin-top: 20px;
 }
 
 img {
-    border: 5px solid rgba(134, 236, 246, 0.335);
+    border: 5px solid rgba(0, 0, 0, 0.335);
+    border-radius: 50%;
     width: 300px;
     height: auto;
-}
-
-.profile {
-    width: 300px;
-    border-radius: 50%;
 }
 
 .info-card {
     width: 300px;
     font-size: 3rem;
+}
+
+.info-card > li {
+    border-bottom: 2px solid black;
 }
 
 span {
