@@ -10,41 +10,46 @@
 </head>
 <body>
     <div class="left-side-container">
-        <img>
         <div class="profile-img">
-            <img>
+            <img src="ShipLogo.png" width="auto" height="45%">
         </div>
-        <div>
-            aoubfiufbwui
+        <div class="card">
+            <img src="HeadShot1.jpg" class="profile">
+            <div class="info">
+                <ul class="info-card">
+                    <li class="name-card">NAME</li>
+                    <li class="crew-card">CREW NAME</li>
+                    <li class="role-card">ROLE</li>
+                </ul>
+                <h1>SPACE VENTURE</h1>
+            </div>
         </div>
     </div>
 
-    <div class="right-side-container">
+    <div class="right-side-container" style="background-color: aliceblue;">
         <p class="intro">
-            This online service is something you don't want to miss. 
-            Be sure to fill out the form below to have the amazing chance
-            to join this real service..
+            Place yourself outside the realm of Earth and experience the vastness of our universe!
         </p>
         <h1 class="catchphrase">
-            <em>This will change your life</em>
+            <em>Explore The Stars</em>
         </h1>
 
         <form method="post">
             <ul>
                 <li class="input-container">
-                    <input type="text" id="first-name" name="first-name" required>
+                    <input type="text" id="first-name" name="first-name" autocomplete="off" required>
                     <label for="first-name">FIRST NAME</label>
                 </li>
                 <li class="input-container">
-                    <input type="text" id="last-name" name="last-name" required>
+                    <input type="text" id="last-name" name="last-name" autocomplete="off" required>
                     <label for="last-name">LAST NAME</label>
                 </li>
                 <li class="input-container">
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" autocomplete="off" required>
                     <label for="email">EMAIL</label>
                 </li>
                 <li class="input-container">
-                    <input type="tel" id="phone-num" name="phone-num">
+                    <input type="tel" id="phone-num" name="phone-num" autocomplete="off">
                     <label for="phone-num">PHONE NUMBER</label>
                 </li>
                 <li class="input-container">
@@ -52,17 +57,18 @@
                         type="text" 
                         id="password" 
                         name="password" 
+                        autocomplete="off"
                         required
                         pattern="^(?=.*[a-z])(?=.*\d)(?=.*\W)(?=.*[A-Z])[A-Za-z\d\W]{8,20}$"
                     >
                     <label for="password">PASSWORD</label>
                 </li>
                 <li class="input-container">
-                    <input type="text" id="pass-confirm" name="pass-confirm" required>
+                    <input type="text" id="pass-confirm" name="pass-confirm" autocomplete="off" required>
                     <label for="pass-confirm">CONFIRM PASSWORD</label>
                 </li>
                 <li class="input-container">
-                    <input type="text" id="crew-name" name="crew-name" required>
+                    <input type="text" id="crew-name" name="crew-name" autocomplete="off" required>
                     <label for="crew-name">CREW NAME</label>
                 </li>
                 <li class="input-container">
@@ -81,6 +87,9 @@
                 <button>Submit</button>
             </p>
         </form>
+        <div class="copy-right">
+            WILFRED @ 2023
+        </div>
     </div>
 </body>
 </html>

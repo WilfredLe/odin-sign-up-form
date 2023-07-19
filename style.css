@@ -8,14 +8,11 @@ html {
     font-family: 'Sofia-Sans-Semi-Condensed', 'Courier New', Courier, monospace;
 }
 
-body {
-    background-image: url("Stars.jpg");
-}
-
 button,
 label,
 input,
 select,
+textarea,
 progress,
 meter {
     appearance: none;
@@ -31,38 +28,64 @@ meter {
 
 body {
     display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .left-side-container, .right-side-continer {
-    width: 50vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+    border: 10px solid rgb(158, 184, 255);
+}
+
+.left-side-container {
+    background-image: url("Stars.jpg");
+    margin: 0;
+    gap: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.283);
+    gap: 100px;
+    padding: 20px;
 }
 
 form {
-    background-color: aqua;
-    border: solid 0.5em rgb(50, 150, 37);
+    background-color: rgb(124, 164, 164);
+    box-shadow: 0px 5px 5px rgba(8, 8, 8, 0.279);
     border-radius: 2px;
-    padding: 40px;
+    padding: 30px;
 }
 
 p, h1 {
     text-align: center;
 }
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    flex-wrap: wrap;
+    width: 45vw;
     gap: 30px;
 }
 
 .input-container {
-    width: 250px;
+    width: 40%;
     margin-bottom: 1px;
     position: relative;
     background-color: antiquewhite;
@@ -71,7 +94,6 @@ ul {
 
 input {
     border: 1px solid transparent;
-    border-bottom: 1px solid grey;
     background-color: transparent;
     padding: 20px 16px 6px;
 }
@@ -100,9 +122,39 @@ select {
 }
 
 textarea {
-    width: 500px;
+    width: 800px;
 }
 
 button {
-    margin-top: 80px;
+    margin-top: 60px;
+    border-radius: 10px;
+    background-color: rgb(248, 254, 255);
+}
+
+.copy-right {
+    font-size: larger;
+    text-align: center;
+    color: rgb(8, 4, 4);
+    background-color: rgba(66, 107, 134, 0.62);
+    margin-top: 20px;
+}
+
+img {
+    border: 5px solid rgba(134, 236, 246, 0.335);
+    width: 300px;
+    height: auto;
+}
+
+.profile {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.info-card {
+    width: 300px;
+    font-size: 3rem;
+}
+
+span {
+    width:50vw
 }
